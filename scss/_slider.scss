@@ -1,0 +1,38 @@
+.owl-carousel .item{
+    max-height: 700px;
+    position: relative;
+    .contenido--slider{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        max-width: 200px;
+        padding: 1rem 1.5rem 2rem;
+        background: rgba(255,255,255,0.9);
+        @media screen and (min-width:$breakpoint-md){
+            margin-left: 5vw;
+            max-width: 450px;
+        }
+        @media screen and (min-width:$breakpoint-lg){
+            margin-left: calc(13vw + 100px);
+        }
+        @media screen and (min-width:$breakpoint-xlg){
+            margin-left: calc(20vw + 100px);
+        }
+
+        h3{
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            @media screen and (min-width:$breakpoint-md){
+                font-size: 2rem;
+            }
+        }
+        p{
+            color: var(--az1);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+

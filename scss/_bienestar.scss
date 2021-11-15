@@ -1,0 +1,25 @@
+.bx--descarga{
+    padding: 1rem;
+    @media screen and (min-width:$breakpoint-sm){
+        min-height: 170px;
+    }
+    @media screen and (min-width:$breakpoint-md){
+        min-height: 157px;
+    }
+    .titulo--descarga{
+        color: var(--az2);
+        font-size: 1.3rem;
+        @media screen and (min-width:$breakpoint-md){
+            max-width: 50%;
+            font-size: 1.1rem;
+        }
+    }
+    .titulo--descarga_full{
+        color: var(--az2);
+        font-size: 1.3rem;
+    }
+    .ano__descarga{
+        color: var(--az2);
+        font-size: 1.3rem;
+    }
+}

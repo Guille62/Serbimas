@@ -1,0 +1,82 @@
+header{
+    background-image: url('../img/Ellipse--header.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 2rem 0px;
+    @media screen and (min-width:$breakpoint-md){
+        height: 174px;
+        background-attachment: inherit;
+        background-position: bottom right;
+    }
+    .navbar-light{
+        background-color: #fff;
+        padding: 0.7rem 2rem;
+        z-index: 99!important;
+        transition: all .4s;
+    }
+    .nav-item{
+        a.nav-link {
+            color: var(--az1)!important;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 1s;
+            &:hover{
+                color: var(--az2) !important;
+            }
+        }
+        @media screen and (min-width:$breakpoint-md){
+            margin:0px 0.8rem;
+        }
+    }
+    .dropdown-menu{
+        @media screen and (min-width:$breakpoint-md){
+            margin-left: -40px;
+            padding: 0px!important;
+        }
+        .dropdown-item{
+            padding-top:1rem;
+            padding-bottom: 1rem;
+            font-weight: 400;
+            text-align: center;
+            border-bottom: solid 1px var(--az1);
+            transition: all .4s;
+            &:hover{
+                font-weight: 400;
+                color: var(--wht);
+                background: var(--az1);
+            }
+            
+        }
+    }
+    .dropdown-menu .dropdown-item:first-child{
+        border-top: none;
+        @media screen and (min-width:$breakpoint-md){
+            border-top-left-radius: 29px 29px;
+            border-top-right-radius: 29px 29px;
+        }
+    }
+    .dropdown-menu .dropdown-item:last-child{
+        border-bottom: none !important;
+        @media screen and (min-width:$breakpoint-md){
+            border-bottom-left-radius: 29px 29px;
+            border-bottom-right-radius: 29px 29px;
+        }
+    }
+    .navbar-toggler{
+        margin: 0px auto 10px auto;
+        @media screen and (min-width:$breakpoint-sm){
+            margin: inherit;
+        }
+    }
+}
+.sticky-wrapper.is-sticky{
+    .navbar{
+        @media screen and (min-width:$breakpoint-md){
+            transform: scale(0.9);
+            height: 80px;
+            img{
+                max-width: 90%;
+            }
+        }
+    }
+}

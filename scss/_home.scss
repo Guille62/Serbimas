@@ -1,0 +1,88 @@
+.beneficios--home{
+    background-image: url('../img/fondo-beneficios.png');
+    background-size:cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    h1{
+        margin:  0px;
+        padding: 0.2rem 0px !important;
+        font-size: 1.5rem;
+        @media screen and (min-width:$breakpoint-md){
+            font-size: 2.1rem;
+        }
+    }
+    p.txt--beneficios{
+        padding: 0.5rem 0px;
+        display: block;
+        color: var(--az1);
+        font-weight: 100;
+    }
+    .beneficios--home__flex{
+        @media screen and (min-width:$breakpoint-md){
+            padding-top: 8rem;
+        }
+    }
+    .bk--beneficios{
+        padding: 1rem 0px;
+    }
+}
+.incorporate--home{
+    background-image: url('../img/fondo-incorporate.png');
+    background-size:cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    h1{
+        margin: 4rem 0px;
+        @media screen and (min-width:$breakpoint-md){
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
+
+
+
+
+.azul{background-color: var(--az1);}
+.mora{background-color: var(--mor);}
+.titulos--bk-home{
+    color: var(--wht);
+    max-width: 300px;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    display: block;
+    border-radius: 29px;
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    @media screen and (min-width:$breakpoint-md){
+        font-size: 2.5rem;
+    }
+}
+.titulos--bk-home__b{
+    color: var(--wht);
+    max-width: 400px;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    display: block;
+    border-radius: 29px;
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-left: -7rem;
+    transition: all .4s;
+    border: solid 1px var(--mor);
+    @media screen and (min-width:$breakpoint-md){
+        font-size: 2rem;
+        margin-top: 5rem;
+        margin-left: -10rem;
+    }
+    &:hover{
+        text-decoration: none;
+        background-color: var(--wht);
+        color: var(--mor);
+    }
+}
