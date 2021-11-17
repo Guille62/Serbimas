@@ -5,22 +5,20 @@ $(document).ready(function(){
 
 
 $('#slider-principal').owlCarousel({
-    items:5,
     loop:true,
     margin:0,
-    rewind: true,
+    dots:true,
     autoplay: true,
-    merge:true,
+    nav:true,
     responsive:{
-        678:{
-            mergeFit:true,
-            nav:true,
-            dots: true,
+        0:{
+            items:1,
+        },
+        600:{
+            items:1,
         },
         1000:{
-            mergeFit:false,
-            nav:true,
-            dots: true,
+            items:1,
         }
     }
 });

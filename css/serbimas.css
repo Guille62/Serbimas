@@ -439,6 +439,53 @@ header .navbar-toggler {
   margin-bottom: 1rem;
 }
 
+.owl-dots {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-left: 10px;
+}
+.owl-carousel .owl-nav button.owl-prev span {
+  font-size: 4rem;
+  color: var(--az1);
+}
+.owl-carousel .owl-nav button.owl-prev span:hover {
+  opacity: 0.6;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  margin-right: 10px;
+}
+.owl-carousel .owl-nav button.owl-next span {
+  font-size: 4rem;
+  color: var(--az1);
+}
+.owl-carousel .owl-nav button.owl-next span:hover {
+  opacity: 0.6;
+}
+
+.owl-carousel button.owl-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--gr1) !important;
+  margin: 2px;
+}
+
+.owl-carousel button.owl-dot.active {
+  background-color: var(--az1) !important;
+}
+
 .beneficios--home {
   background-image: url("../img/fondo-beneficios.png");
   background-size: cover;
